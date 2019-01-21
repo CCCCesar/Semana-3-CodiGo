@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<script type="text/javascript">
+		function realizar(){
+			window.location = "https://www.binarioconsultores.com";
+		}
+		function recargar(){
+			window.location.reload();
+		}
+		function actualizarFecha(){
+			var fecha = new Date();
+			
+			setTimeout(()=>{
+				console.log(fecha);
+			},2000);
+		}
+
+		function actualizarFechaV2(){
+			
+			var fecha = new Date();
+			console.log(fecha);
+			
+		}
+
+
+	</script>
+	<style type="text/css">
+		.miboton{
+			color: #ff4455;
+		}
+	</style>
+</head>
+<body>
+	<button class="miboton" onclick="realizar();" id="abrirpagina" name="abrirpaginanombre">ABRIR PAGINA</button>
+	<br>
+	<button class="miboton" onclick="recargar();">Recargar</button>
+	<br>
+	<button onclick="actualizarFecha()">Imprimir Fecha</button>
+	<br>
+	<button onclick="setInterval(actualizarFechaV2, 2000);">Imprimir Fecha cada 2 segundos</button>
+	<ul>
+		<li>asdasd</li>
+		<li>asdasd</li>
+		<li>asdasd</li>
+	</ul>
+</body>
+</html>
